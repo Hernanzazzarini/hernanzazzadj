@@ -1,0 +1,135 @@
+
+:root{
+    --color-base-blue:#000000;
+    --color-base-pink:#F72798;
+    --color-base-orange:#F57D1F;
+    --color-base-yellow:#EBF400;
+
+}
+
+/* Estilos generales */
+body {
+    
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #343a40;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+h1 {
+    color: #c9dbdb;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+.contenido {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: var(--color-base-orange);
+}
+/* Estilos para el formulario de contacto */
+.formulario-contacto {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.formulario-contacto h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.formulario-contacto input[type='text'],
+.formulario-contacto textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Esto asegura que el ancho del elemento incluya el relleno y el borde */
+}
+
+.formulario-contacto input[type='submit'] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contenido img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.contenido p {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+main a{
+    font-size: 30px;
+    text-overflow: var(--color-base-orange);
+}
+
+footer {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer img {
+    margin: 0 5px;
+}
+
+/* Media Queries */
+/* Estilos específicos para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+    .formulario-contacto {
+        padding: 10px;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar a {
+        margin: 10px 0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .contenido p {
+        font-size: 14px;
+    }
+}
+

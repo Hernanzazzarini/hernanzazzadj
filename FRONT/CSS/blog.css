@@ -1,0 +1,145 @@
+:root{
+    --color-base-blue:#000000;
+    --color-base-pink:#F72798;
+    --color-base-orange:#F57D1F;
+    --color-base-yellow:#EBF400;
+
+}
+
+/* Estilos generales */
+body {
+    
+    font-family: Arial, sans-serif; /* Ajusta la familia de fuentes según tus preferencias */
+    margin: 0;
+    padding: 0;
+}
+
+
+.navbar {
+    background-color: #343a40;
+}
+
+.navbar-brand {
+    color: #fff;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+}
+
+header {
+    background-color: var(--color-base-blue);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.pionner {
+    max-width: 100%;
+    height: auto;
+}
+
+.title-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container-electronica,
+.container-nacional {
+    background-color: var(--color-base-blue);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container-electronica img,
+.container-nacional img {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+}
+
+video {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    max-width: 800px;
+}
+
+footer {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer img {
+    margin: 0 5px;
+}
+
+/* styles.css */
+
+.container-electronica img,
+.container-nacional img {
+    transition: transform 0.3s ease;
+}
+
+.container-electronica img:hover,
+.container-nacional img:hover {
+    transform: scale(1.1); /* Ajusta el factor de escala según sea necesario */
+}
+
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+    .container-electronica img,
+    .container-nacional img {
+        width: 150px;
+        height: 150px;
+    }
+
+    video {
+        max-width: 600px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .container-electronica img,
+    .container-nacional img {
+        width: 100px;
+        height: 100px;
+    }
+
+    video {
+        max-width: 400px;
+    }
+}
+.video-container {
+    display: flex;
+    flex-direction: column; /* Alinear los elementos en columnas */
+    background-color: var(--color-base-blue);
+}
+
+.video {
+    width: 100%;
+    margin-bottom: 20px; /* Espacio entre los videos */
+}
+
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh; /* Ajusta la altura según sea necesario */
+}
+
+
+
+
+
