@@ -83,7 +83,10 @@ h1 {
 .contenido p {
     margin-bottom: 20px;
     font-size: 20px;
+    font-weight: bold;
+
 }
+
 main a{
     font-size: 30px;
     text-overflow: var(--color-base-orange);

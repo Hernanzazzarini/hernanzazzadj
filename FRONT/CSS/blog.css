@@ -1,19 +1,16 @@
-:root{
-    --color-base-blue:#000000;
-    --color-base-pink:#F72798;
-    --color-base-orange:#F57D1F;
-    --color-base-yellow:#EBF400;
-
+:root {
+    --color-base-blue: #000000;
+    --color-base-pink: #F72798;
+    --color-base-orange: #F57D1F;
+    --color-base-yellow: #EBF400;
 }
 
 /* Estilos generales */
 body {
-    
     font-family: Arial, sans-serif; /* Ajusta la familia de fuentes según tus preferencias */
     margin: 0;
     padding: 0;
 }
-
 
 .navbar {
     background-color: #343a40;
@@ -31,9 +28,8 @@ body {
 header {
     background-color: var(--color-base-blue);
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem; /* Cambiar de 20px a 1.25rem */
 }
-
 
 .pionner {
     max-width: 100%;
@@ -42,7 +38,7 @@ header {
 
 .title-container {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem; /* Cambiar de 20px a 1.25rem */
 }
 
 .container-electronica,
@@ -55,9 +51,9 @@ header {
 
 .container-electronica img,
 .container-nacional img {
-    width: 200px;
-    height: 200px;
-    margin: 10px;
+    width: 12rem; /* Cambiar de 200px a 12rem */
+    height: 12rem; /* Cambiar de 200px a 12rem */
+    margin: 1rem; /* Cambiar de 10px a 1rem */
 }
 
 video {
@@ -65,26 +61,25 @@ video {
     margin: 0 auto;
     width: 100%;
     height: auto;
-    max-width: 800px;
+    max-width: 50rem; /* Cambiar de 800px a 50rem */
 }
 
 footer {
     background-color: #343a40;
     color: #fff;
     text-align: center;
-    padding: 20px 0;
+    padding: 1.25rem 0; /* Cambiar de 20px a 1.25rem */
 }
 
 footer p {
-    margin: 5px 0;
+    margin: 0.3125rem 0; /* Cambiar de 5px a 0.3125rem */
 }
 
 footer img {
-    margin: 0 5px;
+    margin: 0 0.3125rem; /* Cambiar de 5px a 0.3125rem */
 }
 
 /* styles.css */
-
 .container-electronica img,
 .container-nacional img {
     transition: transform 0.3s ease;
@@ -95,31 +90,66 @@ footer img {
     transform: scale(1.1); /* Ajusta el factor de escala según sea necesario */
 }
 
+/* Estilos para el contenedor principal */
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column; /* Cambiar a columna en dispositivos pequeños */
+}
+
+/* Estilos para el aside */
+aside {
+    width: 100%; /* Ocupar todo el ancho en dispositivos pequeños */
+    order: 1; /* Cambiar el orden del aside para que aparezca primero en dispositivos pequeños */
+    background-color: #f0f0f0;
+    padding: 1.25rem; /* Cambiar de 20px a 1.25rem */
+}
+
+/* Estilos para los videos */
+.video-container {
+    width: 100%; /* Ocupar todo el ancho en dispositivos pequeños */
+    order: 2; /* Cambiar el orden de los videos para que aparezcan después del aside en dispositivos pequeños */
+}
+
+/* Ajustar estilos para dispositivos pequeños */
+@media screen and (max-width: 20rem) {
+    aside {
+        width: 100%;
+        order: 1;
+    }
+
+    .video-container {
+        width: 100%;
+        order: 2;
+        margin-top: 1.25rem; /* Agregar un espacio entre el aside y los videos en dispositivos pequeños */
+    }
+}
 
 /* Media Queries */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 48rem) {
     .container-electronica img,
     .container-nacional img {
-        width: 150px;
-        height: 150px;
+        width: 7.5rem; /* Cambiar de 150px a 7.5rem */
+        height: 7.5rem; /* Cambiar de 150px a 7.5rem */
     }
 
     video {
-        max-width: 600px;
+        max-width: 37.5rem; /* Cambiar de 600px a 37.5rem */
     }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 30rem) {
     .container-electronica img,
     .container-nacional img {
-        width: 100px;
-        height: 100px;
+        width: 5rem; /* Cambiar de 100px a 5rem */
+        height: 5rem; /* Cambiar de 100px a 5rem */
     }
 
     video {
-        max-width: 400px;
+        max-width: 25rem; /* Cambiar de 400px a 25rem */
     }
 }
+
 .video-container {
     display: flex;
     flex-direction: column; /* Alinear los elementos en columnas */
@@ -128,9 +158,8 @@ footer img {
 
 .video {
     width: 100%;
-    margin-bottom: 20px; /* Espacio entre los videos */
+    margin-bottom: 1.25rem; /* Espacio entre los videos */
 }
-
 
 .center {
     display: flex;
@@ -138,8 +167,3 @@ footer img {
     align-items: center;
     height: 10vh; /* Ajusta la altura según sea necesario */
 }
-
-
-
-
-
