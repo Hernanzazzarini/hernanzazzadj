@@ -107,6 +107,23 @@ footer img {
     margin: 0 5px;
 }
 
+@keyframes scaleAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.contenido h1 {
+    animation: scaleAnimation 2s ease-in-out infinite;
+}
+
+
 /* Media Queries */
 /* Estilos específicos para dispositivos móviles */
 @media only screen and (max-width: 600px) {
